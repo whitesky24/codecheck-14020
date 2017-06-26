@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Base64 - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Base64","wgTitle":"Base64","wgCurRevisionId":759646518,"wgRevisionId":759646518,"wgArticleId":215241,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Wikipedia introduction cleanup from February 2013","All pages needing cleanup","Articles covered by WikiProject Wikify from February 2013","All articles covered by WikiProject Wikify","All articles with unsourced statements","Articles with unsourced statements from April 2016","Articles with unsourced statements from January 2016","Pages using RFC magic links","Usenet","Email","Internet Standards","Binary-to-text encoding formats","Data serialization formats"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Base64","wgRelevantArticleId":215241,"wgRequestId":"WHdpqwpAIDAAABTASXAAAAIE","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q726780","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.math.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","ext.math.scripts","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.math.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.7"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Base64"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Base64&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Base64&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Base64"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Base64 rootpage-Base64 skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Base64</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><table class="plainlinks metadata ambox ambox-content ambox-lead_too_short" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><a href="/wiki/File:Wiki_letter_w.svg" class="image"><img alt="Wiki letter w.svg" src="//upload.wikimedia.org/wikipedia/en/thumb/6/6c/Wiki_letter_w.svg/40px-Wiki_letter_w.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/en/thumb/6/6c/Wiki_letter_w.svg/60px-Wiki_letter_w.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/6/6c/Wiki_letter_w.svg/80px-Wiki_letter_w.svg.png 2x" data-file-width="44" data-file-height="44" /></a></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article's <b><a href="/wiki/Wikipedia:Manual_of_Style/Lead_section" title="Wikipedia:Manual of Style/Lead section">lead section</a> may not adequately <a href="/wiki/Wikipedia:Summary_style" title="Wikipedia:Summary style">summarize</a> key points of its contents</b>. <span class="hide-when-compact">Please consider expanding the lead to <a href="/wiki/Wikipedia:Manual_of_Style/Lead_section#Provide_an_accessible_overview" title="Wikipedia:Manual of Style/Lead section">provide an accessible overview</a> of all important aspects of the article. Please discuss this issue on the article's <a href="/wiki/Talk:Base64" title="Talk:Base64">talk page</a>.</span> <small><i>(February 2013)</i></small></span></td>
+</tr>
+</table>
+<p><b>Base64</b> is a group of similar <a href="/wiki/Binary-to-text_encoding" title="Binary-to-text encoding">binary-to-text encoding</a> schemes that represent <a href="/wiki/Binary_data" title="Binary data">binary data</a> in an <a href="/wiki/ASCII" title="ASCII">ASCII</a> string format by translating it into a <a href="/wiki/Radix" title="Radix">radix</a>-64 representation. The term <i>Base64</i> originates from a specific <a href="/wiki/MIME#Content-Transfer-Encoding" title="MIME">MIME content transfer encoding</a>.</p>
+<p>Each base64 digit is representing exactly 6 bits of data.</p>
+<div class="toclimit-3">
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Design"><span class="tocnumber">1</span> <span class="toctext">Design</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Examples"><span class="tocnumber">2</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Output_Padding"><span class="tocnumber">2.1</span> <span class="toctext">Output Padding</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Sample_Implementation_in_Java"><span class="tocnumber">2.2</span> <span class="toctext">Sample Implementation in Java</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Implementations_and_history"><span class="tocnumber">3</span> <span class="toctext">Implementations and history</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Variants_summary_table"><span class="tocnumber">3.1</span> <span class="toctext">Variants summary table</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Privacy-enhanced_mail"><span class="tocnumber">3.2</span> <span class="toctext">Privacy-enhanced mail</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#MIME"><span class="tocnumber">3.3</span> <span class="toctext">MIME</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#UTF-7"><span class="tocnumber">3.4</span> <span class="toctext">UTF-7</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#OpenPGP"><span class="tocnumber">3.5</span> <span class="toctext">OpenPGP</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#RFC_3548"><span class="tocnumber">3.6</span> <span class="toctext">RFC 3548</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#RFC_4648"><span class="tocnumber">3.7</span> <span class="toctext">RFC 4648</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Filenames"><span class="tocnumber">3.8</span> <span class="toctext">Filenames</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#URL_applications"><span class="tocnumber">3.9</span> <span class="toctext">URL applications</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Program_identifiers"><span class="tocnumber">3.10</span> <span class="toctext">Program identifiers</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#XML"><span class="tocnumber">3.11</span> <span class="toctext">XML</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#HTML"><span class="tocnumber">3.12</span> <span class="toctext">HTML</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#Other_applications"><span class="tocnumber">3.13</span> <span class="toctext">Other applications</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="#Radix-64_applications_not_compatible_with_Base64"><span class="tocnumber">3.14</span> <span class="toctext">Radix-64 applications not compatible with Base64</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-20"><a href="#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-21"><a href="#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-22"><a href="#External_links"><span class="tocnumber">6</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+</div>
+<h2><span class="mw-headline" id="Design">Design</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Base64&amp;action=edit&amp;section=1" title="Edit section: Design">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The particular set of 64 characters chosen to represent the 64 place-values for the base varies between implementations. The general strategy is to choose 64 characters that are both members of a subset common to most encodings, and also <a href="/wiki/Graphic_character" title="Graphic character">printable</a>. This combination leaves the data unlikely to be modified in transit through information systems, such as email, that were traditionally not <a href="/wiki/8-bit_clean" title="8-bit clean">8-bit clean</a>.<sup id="cite_ref-autogenerated2006_1-0" class="reference"><a href="#cite_note-autogenerated2006-1">[1]</a></sup> For example, MIME's Base64 implementation uses <code>A</code>–<code>Z</code>, <code>a</code>–<code>z</code>, and <code>0</code>–<code>9</code> for the first 62 values. Other variations share this property but differ in the symbols chosen for the last two values; an example is <a href="/wiki/UTF-7" title="UTF-7">UTF-7</a>.</p>
+<p>The earliest instances of this type of encoding were created for dialup communication between systems running the same <a href="/wiki/Operating_system" title="Operating system">OS</a>&#160;— <i>e.g.</i>, <a href="/wiki/Uuencoding" title="Uuencoding">uuencode</a> for <a href="/wiki/UNIX" class="mw-redirect" title="UNIX">UNIX</a>, <a href="/wiki/BinHex" title="BinHex">BinHex</a> for the <a href="/wiki/TRS-80" title="TRS-80">TRS-80</a> (later adapted for the <a href="/wiki/Macintosh" title="Macintosh">Macintosh</a>)&#160;— and could therefore make more assumptions about what characters were safe to use. For instance, uuencode uses uppercase letters, digits, and many punctuation characters, but no lowercase.<sup id="cite_ref-rfc_1421_2-0" class="reference"><a href="#cite_note-rfc_1421-2">[2]</a></sup><sup id="cite_ref-rfc_2045_3-0" class="reference"><a href="#cite_note-rfc_2045-3">[3]</a></sup><sup id="cite_ref-rfc_3548_4-0" class="reference"><a href="#cite_note-rfc_3548-4">[4]</a></sup><sup id="cite_ref-autogenerated2006_1-1" class="reference"><a href="#cite_note-autogenerated2006-1">[1]</a></sup></p>
+<h2><span class="mw-headline" id="Examples">Examples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Base64&amp;action=edit&amp;section=2" title="Edit section: Examples">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>A quote from <a href="/wiki/Thomas_Hobbes" title="Thomas Hobbes">Thomas Hobbes</a>' <i><a href="/wiki/Leviathan_(book)" title="Leviathan (book)">Leviathan</a></i> (be aware of spaces between lines):</p>
+<pre>
+Man is distinguished, not only by his reason, but by this singular passion from
+other animals, which is a lust of the mind, that by a perseverance of delight
+in the continued and indefatigable generation of knowledge, exceeds the short
+vehemence of any carnal pleasure.
+</pre>
+<p>is represented as a byte sequence of 8-bit-padded <a href="/wiki/ASCII" title="ASCII">ASCII</a> characters encoded in <a href="/wiki/MIME" title="MIME">MIME</a>'s Base64 scheme as follows:</p>
+<pre>
+TWFuIGlzIGRpc3Rpbmd1aXNoZWQsIG5vdCBvbmx5IGJ5IGhpcyByZWFzb24sIGJ1dCBieSB0aGlz
+IHNpbmd1bGFyIHBhc3Npb24gZnJvbSBvdGhlciBhbmltYWxzLCB3aGljaCBpcyBhIGx1c3Qgb2Yg
+dGhlIG1pbmQsIHRoYXQgYnkgYSBwZXJzZXZlcmFuY2Ugb2YgZGVsaWdodCBpbiB0aGUgY29udGlu
+dWVkIGFuZCBpbmRlZmF0aWdhYmxlIGdlbmVyYXRpb24gb2Yga25vd2xlZGdlLCBleGNlZWRzIHRo
+ZSBzaG9ydCB2ZWhlbWVuY2Ugb2YgYW55IGNhcm5hbCBwbGVhc3VyZS4=
+</pre>
+<p>In the above quote, the encoded value of <i>Man</i> is <i>TWFu</i>. Encoded in ASCII, the characters <i>M</i>, <i>a</i>, and <i>n</i> are stored as the bytes <code>77</code>, <code>97</code>, and <code>110</code>, which are the 8-bit binary values <code>01001101</code>, <code>01100001</code>, and <code>01101110</code>. These three values are joined together into a 24-bit string, producing <code>010011010110000101101110</code>. Groups of 6 bits (6 bits have a maximum of 2<sup>6</sup>&#160;=&#160;64 different binary values) are <a href="/wiki/Binary_number#Counting_in_binary" title="Binary number">converted into individual numbers</a> from left to right (in this case, there are four numbers in a 24-bit string), which are then converted into their corresponding Base64 character values.</p>
+<table class="wikitable">
+<tr>
+<th scope="row">source ASCII (if &lt;128)</th>
+<td colspan="8" style="text-align:center;"><b>M</b></td>
+<td colspan="8" style="text-align:center;"><b>a</b></td>
+<td colspan="8" style="text-align:center;"><b>n</b></td>
+</tr>
+<tr>
+<th scope="row">source octets</th>
+<td colspan="8" style="text-align:center;">77 (0x4d)</td>
+<td colspan="8" style="text-align:center;">97 (0x61)</td>
+<td colspan="8" style="text-align:center;">110 (0x6e)</td>
+</tr>
+<tr>
+<th scope="row">Bit pattern</th>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<th scope="row">Index</th>
+<td colspan="6" style="text-align:center;">19</td>
+<td colspan="6" style="text-align:center;">22</td>
+<td colspan="6" style="text-align:center;">5</td>
+<td colspan="6" style="text-align:center;">46</td>
+</tr>
+<tr>
+<th scope="row">Base64-encoded</th>
+<td colspan="6" style="text-align:center;"><b>T</b></td>
+<td colspan="6" style="text-align:center;"><b>W</b></td>
+<td colspan="6" style="text-align:center;"><b>F</b></td>
+<td colspan="6" style="text-align:center;"><b>u</b></td>
+</tr>
+<tr>
+<th scope="row">encoded octets</th>
+<td colspan="6" style="text-align:center;">84 (0x54)</td>
+<td colspan="6" style="text-align:center;">87 (0x57)</td>
+<td colspan="6" style="text-align:center;">70 (0x46)</td>
+<td colspan="6" style="text-align:center;">117 (0x75)</td>
+</tr>
+</table>
+<p>As this example illustrates, Base64 encoding converts three <a href="/wiki/Octet_(computing)" title="Octet (computing)">octets</a> into four encoded characters.</p>
+<p><span id="Base64table">The Base64 index table</span>:</p>
+<table class="wikitable" style="text-align:center">
+<tr>
+<th scope="col">Value</th>
+<th scope="col">Char</th>
+<td rowspan="17">&#160;</td>
+<th scope="col">Value</th>
+<th scope="col">Char</th>
+<td rowspan="17">&#160;</td>
+<th scope="col">Value</th>
+<th scope="col">Char</th>
+<td rowspan="17">&#160;</td>
+<th scope="col">Value</th>
+<th scope="col">Char</th>
+</tr>
+<tr>
+<td>0</td>
+<td><code>A</code></td>
+<td>16</td>
+<td><code>Q</code></td>
+<td>32</td>
+<td><code>g</code></td>
+<td>48</td>
+<td><code>w</code></td>
+</tr>
+<tr>
+<td>1</td>
+<td><code>B</code></td>
+<td>17</td>
+<td><code>R</code></td>
+<td>33</td>
+<td><code>h</code></td>
+<td>49</td>
+<td><code>x</code></td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>C</code></td>
+<td>18</td>
+<td><code>S</code></td>
+<td>34</td>
+<td><code>i</code></td>
+<td>50</td>
+<td><code>y</code></td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>D</code></td>
+<td>19</td>
+<td><code>T</code></td>
+<td>35</td>
+<td><code>j</code></td>
+<td>51</td>
+<td><code>z</code></td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>E</code></td>
+<td>20</td>
+<td><code>U</code></td>
+<td>36</td>
+<td><code>k</code></td>
+<td>52</td>
+<td><code>0</code></td>
+</tr>
+<tr>
+<td>5</td>
+<td><code>F</code></td>
+<td>21</td>
+<td><code>V</code></td>
+<td>37</td>
+<td><code>l</code></td>
+<td>53</td>
+<td><code>1</code></td>
+</tr>
+<tr>
+<td>6</td>
+<td><code>G</code></td>
+<td>22</td>
+<td><code>W</code></td>
+<td>38</td>
+<td><code>m</code></td>
+<td>54</td>
+<td><code>2</code></td>
+</tr>
+<tr>
+<td>7</td>
+<td><code>H</code></td>
+<td>23</td>
+<td><code>X</code></td>
+<td>39</td>
+<td><code>n</code></td>
+<td>55</td>
+<td><code>3</code></td>
+</tr>
+<tr>
+<td>8</td>
+<td><code>I</code></td>
+<td>24</td>
+<td><code>Y</code></td>
+<td>40</td>
+<td><code>o</code></td>
+<td>56</td>
+<td><code>4</code></td>
+</tr>
+<tr>
+<td>9</td>
+<td><code>J</code></td>
+<td>25</td>
+<td><code>Z</code></td>
+<td>41</td>
+<td><code>p</code></td>
+<td>57</td>
+<td><code>5</code></td>
+</tr>
+<tr>
+<td>10</td>
+<td><code>K</code></td>
+<td>26</td>
+<td><code>a</code></td>
+<td>42</td>
+<td><code>q</code></td>
+<td>58</td>
+<td><code>6</code></td>
+</tr>
+<tr>
+<td>11</td>
+<td><code>L</code></td>
+<td>27</td>
+<td><code>b</code></td>
+<td>43</td>
+<td><code>r</code></td>
+<td>59</td>
+<td><code>7</code></td>
+</tr>
+<tr>
+<td>12</td>
+<td><code>M</code></td>
+<td>28</td>
+<td><code>c</code></td>
+<td>44</td>
+<td><code>s</code></td>
+<td>60</td>
+<td><code>8</code></td>
+</tr>
+<tr>
+<td>13</td>
+<td><code>N</code></td>
+<td>29</td>
+<td><code>d</code></td>
+<td>45</td>
+<td><code>t</code></td>
+<td>61</td>
+<td><code>9</code></td>
+</tr>
+<tr>
+<td>14</td>
+<td><code>O</code></td>
+<td>30</td>
+<td><code>e</code></td>
+<td>46</td>
+<td><code>u</code></td>
+<td>62</td>
+<td><code>+</code></td>
+</tr>
+<tr>
+<td>15</td>
+<td><code>P</code></td>
+<td>31</td>
+<td><code>f</code></td>
+<td>47</td>
+<td><code>v</code></td>
+<td>63</td>
+<td><code>/</code></td>
+</tr>
+</table>
+<p>When the number of bytes to encode is not divisible by three (that is, if there are only one or two bytes of input for the last 24-bit block), then the following action is performed:</p>
+<p>Add extra bytes with value zero so there are three bytes, and perform the conversion to base64.</p>
+<p>If there is only one significant input byte (e.g., 'M'), all 8 bits will be captured in the first two base64 digits (12 bits).</p>
+<table class="wikitable">
+<tr>
+<th scope="row">Text content</th>
+<td colspan="8" style="text-align:center;"><b>M</b></td>
+<td colspan="8" style="text-align:center;"></td>
+<td colspan="8" style="text-align:center;"></td>
+</tr>
+<tr>
+<th scope="row">ASCII</th>
+<td colspan="8" style="text-align:center;">77 (0x4d)</td>
+<td colspan="8" style="text-align:center;">0 (0x00)</td>
+<td colspan="8" style="text-align:center;">0 (0x00)</td>
+</tr>
+<tr>
+<th scope="row">Bit pattern</th>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<th scope="row">Index</th>
+<td colspan="6" style="text-align:center;">19</td>
+<td colspan="6" style="text-align:center;">16</td>
+<td colspan="6" style="text-align:center;">0</td>
+<td colspan="6" style="text-align:center;">0</td>
+</tr>
+<tr>
+<th scope="row">Base64-encoded</th>
+<td colspan="6" style="text-align:center;"><b>T</b></td>
+<td colspan="6" style="text-align:center;"><b>Q</b></td>
+<td colspan="6" style="text-align:center;"><b>=</b></td>
+<td colspan="6" style="text-align:center;"><b>=</b></td>
+</tr>
+</table>
+<p>If there are two significant input bytes (e.g., 'Ma'), all 16 bits will be captured in the first three base64 digits (18 bits). '<code>=</code>' characters might be added to make the last block contain four base64 characters.</p>
+<table class="wikitable">
+<tr>
+<th scope="row">Text content</th>
+<td colspan="8" style="text-align:center;"><b>M</b></td>
+<td colspan="8" style="text-align:center;"><b>a</b></td>
+<td colspan="8" style="text-align:center;"></td>
+</tr>
+<tr>
+<th scope="row">ASCII</th>
+<td colspan="8" style="text-align:center;">77 (0x4d)</td>
+<td colspan="8" style="text-align:center;">97 (0x61)</td>
+<td colspan="8" style="text-align:center;">0 (0x00)</td>
+</tr>
+<tr>
+<th scope="row">Bit pattern</th>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<th scope="row">Index</th>
+<td colspan="6" style="text-align:center;">19</td>
+<td colspan="6" style="text-align:center;">22</td>
+<td colspan="6" style="text-align:center;">4</td>
+<td colspan="6" style="text-align:center;">0</td>
+</tr>
+<tr>
+<th scope="row">Base64-encoded</th>
+<td colspan="6" style="text-align:center;"><b>T</b></td>
+<td colspan="6" style="text-align:center;"><b>W</b></td>
+<td colspan="6" style="text-align:center;"><b>E</b></td>
+<td colspan="6" style="text-align:center;"><b>=</b></td>
+</tr>
+</table>
+<p>As illustrated above, when the last input group contains only one octet, the four <a href="/wiki/Least_significant_bit" title="Least significant bit">least significant bits</a> of the last content-bearing 6-bit block will turn out to be zero:</p>
+<table class="wikitable">
+<tr>
+<th scope="row">Bit pattern</th>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<th scope="row">Index</th>
+<td colspan="6" style="text-align:center;">16</td>
+</tr>
+<tr>
+<th scope="row">Base64-encoded</th>
+<td colspan="6" style="text-align:center;"><b>Q</b></td>
+</tr>
+</table>
+<p>And when the last input group contains two octets, the two least significant bits of the last content-bearing 6-bit block will turn out to be zero:</p>
+<table class="wikitable">
+<tr>
+<th scope="row">Bit pattern</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<th scope="row">Index</th>
+<td colspan="6" style="text-align:center;">4</td>
+</tr>
+<tr>
+<th scope="row">Base64-encoded</th>
+<td colspan="6" style="text-align:center;"><b>E</b></td>
+</tr>
+</table>
+<h3><span class="mw-headline" id="Output_Padding">Output Padding</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Base64&amp;action=edit&amp;section=3" title="Edit section: Output Padding">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The final '<code>==</code>' sequence indicates that the last group contained only one byte, and '<code>=</code>' indicates that it contained two bytes. The example below illustrates how truncating the input of the above quote changes the output padding:</p>
+<table class="wikitable">
+<tr>
+<th>Length</th>
+<th>Input</th>
+<th>Length</th>
+<th>Output</th>
+<th>Padding</th>
+</tr>
+<tr>
+<td>20</td>
+<td><i>any carnal plea<b>sure.</b></i></td>
+<td>28</td>
+<td>YW55IGNhcm5hbCBwbGVh<b>c3VyZS4=</b></td>
+<td>1</td>
+</tr>
+<tr>
+<td>19</td>
+<td><i>any carnal plea<b>sure</b></i></td>
+<td>28</td>
+<td>YW55IGNhcm5hbCBwbGVh<b>c3VyZQ==</b></td>
+<td>2</td>
+</tr>
+<tr>
+<td>18</td>
+<td><i>any carnal plea<b>sur</b></i></td>
+<td>24</td>
+<td>YW55IGNhcm5hbCBwbGVh<b>c3Vy</b></td>
+<td>0</td>
+</tr>
+<tr>
+<td>17</td>
+<td><i>any carnal plea<b>su</b></i></td>
+<td>24</td>
+<td>YW55IGNhcm5hbCBwbGVh<b>c3U=</b></td>
+<td>1</td>
+</tr>
+<tr>
+<td>16</td>
+<td><i>any carnal plea<b>s</b></i></td>
+<td>24</td>
+<td>YW55IGNhcm5hbCBwbGVh<b>cw==</b></td>
+<td>2</td>
+</tr>
+</table>
+<p>The same characters will be encoded differently depending on their position within the three-octet group which is encoded to produce the four characters. For example:</p>
+<table class="wikitable" style="text-align:right;">
+<tr>
+<th>Input</th>
+<th>Output</th>
+</tr>
+<tr>
+<td><i>plea<b>sure.</b></i></td>
+<td>cGxlY<b>XN1cmUu</b></td>
+</tr>
+<tr>
+<td><i>lea<b>sure.</b></i></td>
+<td>bGVh<b>c3VyZS4=</b></td>
+</tr>
+<tr>
+<td><i>ea<b>sure.</b></i></td>
+<td>ZWF<b>zdXJlLg==</b></td>
+</tr>
+<tr>
+<td><i>a<b>sure.</b></i></td>
+<td>Y<b>XN1cmUu</b></td>
+</tr>
+<tr>
+<td><i><b>sure.</b></i></td>
+<td><b>c3VyZS4=</b></td>
+</tr>
+</table>
+<p>The ratio of output bytes to input bytes is 4:3 (33% overhead). Specifically, given an input of <i>n</i> bytes, the output will be <span><span class="mwe-math-mathml-inline mwe-math-mathml-a11y mw-math-element" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>4</mn>
+        <mo fence="false" stretchy="false">&#x2308;<!-- ⌈ --></mo>
+        <mi>n</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mn>3</mn>
+        <mo fence="false" stretchy="false">&#x2309;<!-- ⌉ --></mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 4\lceil n/3\rceil }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ef2e5e2650817f2f724d6cc32a074092c96122f4" class="mwe-math-fallback-image-inline mw-math-element" aria-hidden="true" style="vertical-align: -0.838ex; width:7.01ex; height:2.843ex;" alt="4 \lceil n/3 \rceil" /></span> bytes long, including padding characters.</p>
+<p>In theory, the padding character is not needed for decoding, since the number of missing bytes can be calculated from the number of Base64 digits. In some implementations, the padding character is mandatory, while for others it is not used. One case in which padding characters are required is concatenating multiple Base64 encoded files.</p>
+<dl>
+<dt>Decoding Base64 with padding</dt>
+</dl>
+<p>When decoding Base64 text, four characters are typically converted back to three bytes. The only exceptions are when padding characters exist. A single '<code>=</code>' indicates that the four characters will decode to only two bytes, while '<code>==</code>' indicates that the four characters will decode to only a single byte. For example:</p>
+<table class="wikitable">
+<tr>
+<th>Encoded</th>
+<th>Padding</th>
+<th>Length</th>
+<th>Decoded</th>
+</tr>
+<tr>
+<td>YW55IGNhcm5hbCBwbGVh<b>cw==</b></td>
+<td>two '='s</td>
+<td>1</td>
+<td><i>any carnal plea<b>s</b></i></td>
+</tr>
+<tr>
+<td>YW55IGNhcm5hbCBwbGVh<b>c3U=</b></td>
+<td>one '='</td>
+<td>2</td>
+<td><i>any carnal plea<b>su</b></i></td>
+</tr>
+<tr>
+<td>YW55IGNhcm5hbCBwbGVh<b>c3Vy</b></td>
+<td>no '='s</td>
+<td>3</td>
+<td><i>any carnal plea<b>sur</b></i></td>
+</tr>
+</table>
+<dl>
+<dt>Decoding Base64 without padding</dt>
+</dl>
+<p>Without padding, after normal decoding of four characters to three bytes over and over again, less than four encoded characters may remain. In this situation only two or three characters shall remain. A single remaining encoded character is not possible (because a single base 64 character only contains 6 bits, and 8 bits are required to create a byte, so a minimum of 2 base 64 characters are required&#160;: the first character contributes 6 bits, and the second character contributes its first 2 bits) . For example:</p>
+<table class="wikitable">
+<tr>
+<th>Length</th>
+<th>Encoded</th>
+<th>Length</th>
+<th>Decoded</th>
+</tr>
+<tr>
+<td>2</td>
+<td>YW55IGNhcm5hbCBwbGVh<b>cw</b></td>
+<td>1</td>
+<td><i>any carnal plea<b>s</b></i></td>
+</tr>
+<tr>
+<td>3</td>
+<td>YW55IGNhcm5hbCBwbGVh<b>c3U</b></td>
+<td>2</td>
+<td><i>any carnal plea<b>su</b></i></td>
+</tr>
+<tr>
+<td>4</td>
+<td>YW55IGNhcm5hbCBwbGVh<b>c3Vy</b></td>
+<td>3</td>
+<td><i>any carnal plea<b>sur</b></i></td>
+</tr>
+</table>
+<h3><span class="mw-headline" id="Sample_Implementation_in_Java">Sample Implementation in Java</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Base64&amp;action=edit&amp;section=4" title="Edit section: Sample Implementation in Java">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>This implementation is designed to illustrate the mechanics of Base64 encoding and decoding, not necessarily for memory or time efficiency.</p>
+<p>Please note that Java 8 has <a rel="nofollow" class="external text" href="https://docs.oracle.com/javase/8/docs/technotes/guides/lang/enhancements.html#jdk8">introduced</a> java.util.Base64.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+    <span class="k">private</span> <span class="k">static</span> <span class="k">final</span> <span class="n">String</span> <span class="n">CODES</span> <span class="o">=</span> <span class="s">"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/="</span><span class="p">;</span>
+
+    <span class="k">private</span> <span class="k">static</span> <span class="n">byte</span><span class="p">[]</span> <span class="n">base64Decode</span><span class="p">(</span><span class="n">String</span> <span class="n">input</span><span class="p">)</span>    <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">input</span><span class="p">.</span><span class="n">length</span><span class="p">()</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span>    <span class="p">{</span>
+            <span class="k">throw</span> <span class="k">new</span> <span class="n">IllegalArgumentException</span><span class="p">(</span><span class="s">"Invalid base64 input"</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="n">byte</span> <span class="n">decoded</span><span class="p">[]</span> <span class="o">=</span> <span class="k">new</span> <span class="n">byte</span><span class="p">[((</span><span class="n">input</span><span class="p">.</span><span class="n">length</span><span class="p">()</span> <span class="o">*</span> <span class="mi">3</span><span class="p">)</span> <span class="o">/</span> <span class="mi">4</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="n">input</span><span class="p">.</span><span class="n">indexOf</span><span class="p">(</span><span class="sc">'='</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="o">?</span> <span class="p">(</span><span class="n">input</span><span class="p">.</span><span class="n">length</span><span class="p">()</span> <span class="o">-</span> <span class="n">input</span><span class="p">.</span><span class="n">indexOf</span><span class="p">(</span><span class="sc">'='</span><span class="p">))</span> <span class="o">:</span> <span class="mi">0</span><span class="p">)];</span>
+        <span class="kt">char</span><span class="p">[]</span> <span class="n">inChars</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="n">toCharArray</span><span class="p">();</span>
+        <span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">b</span><span class="p">[]</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">[</span><span class="mi">4</span><span class="p">];</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">inChars</span><span class="p">.</span><span class="n">length</span><span class="p">;</span> <span class="n">i</span> <span class="o">+=</span> <span class="mi">4</span><span class="p">)</span>     <span class="p">{</span>
+            <span class="c1">// This could be made faster (but more complicated) by precomputing these index locations.</span>
+            <span class="n">b</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">CODES</span><span class="p">.</span><span class="n">indexOf</span><span class="p">(</span><span class="n">inChars</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+            <span class="n">b</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">CODES</span><span class="p">.</span><span class="n">indexOf</span><span class="p">(</span><span class="n">inChars</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]);</span>
+            <span class="n">b</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">CODES</span><span class="p">.</span><span class="n">indexOf</span><span class="p">(</span><span class="n">inChars</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">2</span><span class="p">]);</span>
+            <span class="n">b</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="n">CODES</span><span class="p">.</span><span class="n">indexOf</span><span class="p">(</span><span class="n">inChars</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">3</span><span class="p">]);</span>
+            <span class="n">decoded</span><span class="p">[</span><span class="n">j</span><span class="o">++</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">byte</span><span class="p">)</span> <span class="p">((</span><span class="n">b</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="mi">2</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">b</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;&gt;</span> <span class="mi">4</span><span class="p">));</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">b</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">64</span><span class="p">)</span>      <span class="p">{</span>
+                <span class="n">decoded</span><span class="p">[</span><span class="n">j</span><span class="o">++</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">byte</span><span class="p">)</span> <span class="p">((</span><span class="n">b</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="mi">4</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">b</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">&gt;&gt;</span> <span class="mi">2</span><span class="p">));</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">b</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">64</span><span class="p">)</span>  <span class="p">{</span>
+                    <span class="n">decoded</span><span class="p">[</span><span class="n">j</span><span class="o">++</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">byte</span><span class="p">)</span> <span class="p">((</span><span class="n">b</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="mi">6</span><span class="p">)</span> <span class="o">|</span> <span class="n">b</span><span class="p">[</span><span class="mi">3</span><span class="p">]);</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+        <span class="k">return</span> <span class="n">decoded</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">private</span> <span class="k">static</span> <span class="n">String</span> <span class="n">base64Encode</span><span class="p">(</span><span class="n">byte</span><span class="p">[]</span> <span class="n">in</span><span class="p">)</span>       <span class="p">{</span>
+        <span class="n">StringBuilder</span> <span class="n">out</span> <span class="o">=</span> <span class="k">new</span> <span class="n">StringBuilder</span><span class="p">((</span><span class="n">in</span><span class="p">.</span><span class="n">length</span> <span class="o">*</span> <span class="mi">4</span><span class="p">)</span> <span class="o">/</span> <span class="mi">3</span><span class="p">);</span>
+        <span class="kt">int</span> <span class="n">b</span><span class="p">;</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">in</span><span class="p">.</span><span class="n">length</span><span class="p">;</span> <span class="n">i</span> <span class="o">+=</span> <span class="mi">3</span><span class="p">)</span>  <span class="p">{</span>
+            <span class="n">b</span> <span class="o">=</span> <span class="p">(</span><span class="n">in</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0xFC</span><span class="p">)</span> <span class="o">&gt;&gt;</span> <span class="mi">2</span><span class="p">;</span>
+            <span class="n">out</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">CODES</span><span class="p">.</span><span class="n">charAt</span><span class="p">(</span><span class="n">b</span><span class="p">));</span>
+            <span class="n">b</span> <span class="o">=</span> <span class="p">(</span><span class="n">in</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x03</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="mi">4</span><span class="p">;</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">&lt;</span> <span class="n">in</span><span class="p">.</span><span class="n">length</span><span class="p">)</span>      <span class="p">{</span>
+                <span class="n">b</span> <span class="o">|=</span> <span class="p">(</span><span class="n">in</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0xF0</span><span class="p">)</span> <span class="o">&gt;&gt;</span> <span class="mi">4</span><span class="p">;</span>
+                <span class="n">out</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">CODES</span><span class="p">.</span><span class="n">charAt</span><span class="p">(</span><span class="n">b</span><span class="p">));</span>
+                <span class="n">b</span> <span class="o">=</span> <span class="p">(</span><span class="n">in</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x0F</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="mi">2</span><span class="p">;</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">&lt;</span> <span class="n">in</span><span class="p">.</span><span class="n">length</span><span class="p">)</span>  <span class="p">{</span>
+                    <span class="n">b</span> <span class="o">|=</span> <span class="p">(</span><span class="n">in</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">2</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0xC0</span><span class="p">)</span> <span class="o">&gt;&gt;</span> <span class="mi">6</span><span class="p">;</span>
+                    <span class="n">out</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">CODES</span><span class="p">.</span><span class="n">charAt</span><span class="p">(</span><span class="n">b</span><span class="p">));</span>
+                    <span class="n">b</span> <span class="o">=</span> <span class="n">in</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">2</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mh">0x3F</span><span class="p">;</span>
+                    <span class="n">out</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">CODES</span><span class="p">.</span><span class="n">charAt</span><span class="p">(</span><span class="n">b</span><span class="p">));</span>
+                <span class="p">}</span> <span class="k">else</span>  <span class="p">{</span>
+                    <span class="n">out</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">CODES</span><span class="p">.</span><span class="n">charAt</span><span class="p">(</span><span class="n">b</span><span class="p">));</span>
+                    <span class="n">out</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="sc">'='</span><span class="p">);</span>
+                <span class="p">}</span>
+            <span class="p">}</span> <span class="k">else</span>      <span class="p">{</span>
+                <span class="n">out</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">CODES</span><span class="p">.</span><span class="n">charAt</span><span class="p">(</span><span class="n">b</span><span class="p">));</span>
+                <span class="n">out</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="s">"=="</span><span class="p">);</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+        <span class="k">return</span> <span class="n">out</span><span class="p">.</span><span class="n">toString</span><span class="p">();</span>
+    <span class="p">}</span>
+</pre></div>
+<h2><span class="mw-headline" id="Implementations_and_history">Implementations and history</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Base64&amp;action=edit&amp;section=5" title="Edit section: Implementations and history">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Variants_summary_table">Variants summary table</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Base64&amp;action=edit&amp;section=6" title="Edit section: Variants summary table">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Implementations may have some constraints on the alphabet used for representing some bit patterns. This notably concerns the last two characters used in the index table for index 62 and 63, and the character used for padding (which may be mandatory in some protocols, or removed in others). The table below summarizes these known variants, and link to the subsections below.</p>
+<table class="wikitable" style="text-align:center">
+<tr>
+<th>Variant</th>
+<th>Char for index 62</th>
+<th>Char for index 63</th>
+<th><i>pad</i> char</th>
+<th>Fixed encoded line-length</th>
+<th>Maximum encoded line length</th>
+<th>Line separators</th>
+<th>Characters outside alphabet</th>
+<th>Line checksum</th>
+</tr>
+<tr>
+<th>Original Base64 for <a href="#Privacy-enhanced_mail">Privacy-Enhanced Mail (PEM)</a> (RFC 1421, deprecated)</th>
+<td><code>+</code></td>
+<td><code>/</code></td>
+<td><code>=</code> <i>(mandatory)</i></td>
+<td>Yes (except last line)</td>
+<td>64</td>
+<td>CR+LF</td>
+<td>Forbidden</td>
+<td><i>(none)</i></td>
+</tr>
+<tr>
+<th>Base64 transfer encoding for <a href="#MIME">MIME</a> (RFC 2045)</th>
+<td><code>+</code></td>
+<td><code>/</code></td>
+<td><code>=</code> <i>(mandatory)</i></td>
+<td>No (variable)</td>
+<td>76</td>
+<td>CR+LF</td>
+<td>Accepted (discarded)</td>
+<td><i>(none)</i></td>
+</tr>
+<tr>
+<th>Standard 'base64' encoding for <a href="#RFC_3548">RFC 3548</a> or <a href="#RFC_4648">RFC 4648</a></th>
+<td><code>+</code></td>
+<td><code>/</code></td>
+<td><code>=</code> <i>(mandatory unless specified by referencing document)</i></td>
+<td>No <i>(unless specified by referencing document)</i></td>
+<td>None <i>(unless specified by referencing document)</i></td>
+<td>None <i>(unless specified by referencing document)</i></td>
+<td>Forbidden <i>(unless specified by referencing document)</i></td>
+<td><i>(none)</i></td>
+</tr>
+<tr>
+<th>'Radix-64' encoding for <a href="#OpenPGP">OpenPGP</a> (RFC 4880)</th>
+<td><code>+</code></td>
+<td><code>/</code></td>
+<td><code>=</code> <i>(mandatory)</i></td>
+<td>No (variable)</td>
+<td>76</td>
+<td>CR+LF</td>
+<td>Forbidden</td>
+<td>24-bit <a href="/wiki/Cyclic_redundancy_check" title="Cyclic redundancy check">CRC</a> (Radix-64-encoded, including one <i>pad</i> character)</td>
+</tr>
+<tr>
+<th>Modified Base64 encoding for <a href="#UTF-7">UTF-7</a> (RFC 1642, obsoleted)</th>
+<td><code>+</code></td>
+<td><code>/</code></td>
+<td><i>(none)</i></td>
+<td>No (variable)</td>
+<td><i>(none)</i></td>
+<td><i>(none)</i></td>
+<td>Forbidden</td>
+<td><i>(none)</i></td>
+</tr>
+<tr>
+<th>Modified Base64 encoding for <a href="#Internet_Message_Access_Protocol">IMAP</a> mailbox names (RFC 3501)</th>
+<td><code>+</code></td>
+<td><code>,</code></td>
+<td><i>(none)</i></td>
+<td>No (variable)</td>
+<td><i>(none)</i></td>
+<td><i>(none)</i></td>
+<td>Forbidden</td>
+<td><i>(none)</i></td>
+</tr>
+<tr>
+<th>Standard 'base64url' with <a href="#URL_applications">URL</a> and <a href="#Filenames">Filename</a> Safe Alphabet (<a href="#RFC_4648">RFC 4648</a> §5 'Table 2: The "URL and Filename safe" Base 64 Alphabet')</th>
+<td><code>-</code></td>
+<td><code>_</code></td>
+<td><code>=</code> <i>(optional if data length is known, otherwise must be percent-encoded in URL)</i></td>
+<td>No (variable)</td>
+<td><i>(application-dependent)</i></td>
+<td><i>(none)</i></td>
+<td>Forbidden</td>
+<td><i>(none)</i></td>
+</tr>
+<tr>
+<th>Unpadded 'base64url' for "named information" URI's (<a href="/w/index.php?title=RFC_6920&amp;action=edit&amp;redlink=1" class="new" title="RFC 6920 (page does not exist)">RFC 6920</a>)</th>
+<td><code>-</code></td>
+<td><code>_</code></td>
+<td><i>(none)</i></td>
+<td>No (variable)</td>
+<td><i>(application-dependent)</i></td>
+<td><i>(none)</i></td>
+<td>Forbidden</td>
+<td><i>Separate <a href="/wiki/Luhn_algorithm" title="Luhn algorithm">Luhn</a> checksum</i></td>
+</tr>
+<tr>
+<th>Non-standard <a href="#URL_applications">URL</a>-safe Modification of Base64 used in <a href="/wiki/YUI_Library" title="YUI Library">YUI Library</a> (Y64)<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[5]</a></sup></th>
+<td><code>.</code></td>
+<td><code>_</code></td>
+<td><code>-</code></td>
+<td>No (variable)</td>
+<td><i>(application-dependent)</i></td>
+<td><i>(none)</i></td>
+<td>Forbidden</td>
+<td><i>(none)</i></td>
+</tr>
+<tr>
+<th>Modified Base64 for <a href="#XML">XML</a> name tokens (<i>Nmtoken</i>)</th>
+<td><code>.</code></td>
+<td><code>-</code></td>
+<td><i>(none)</i></td>
+<td>No (variable)</td>
+<td><i>(XML parser-dependent)</i></td>
+<td><i>(none)</i></td>
+<td>Forbidden</td>
+<td><i>(none)</i></td>
+</tr>
+<tr>
+<th>Modified Base64 for <a href="#XML">XML</a> identifiers (<i>Name</i>)</th>
+<td><code>_</code></td>
+<td><code>:</code></td>
+<td><i>(none)</i></td>
+<td>No (variable)</td>
+<td><i>(XML parser-dependent)</i></td>
+<td><i>(none)</i></td>
+<td>Forbidden</td>
+<td><i>(none)</i></td>
+</tr>
+<tr>
+<th>Modified Base64 for <a href="#Program_identifiers">Program identifiers</a> (variant 1, non standard)</th>
+<td><code>_</code></td>
+<td><code>-</code></td>
+<td><i>(none)</i></td>
+<td>No (variable)</td>
+<td><i>(language/system-dependent)</i></td>
+<td><i>(none)</i></td>
+<td>Forbidden</td>
+<td><i>(none)</i></td>
+</tr>
+<tr>
+<th>Modified Base64 for <a href="#Program_identifiers">Program identifiers</a> (variant 2, non standard)</th>
+<td><code>.</code></td>
+<td><code>_</code></td>
+<td><i>(none)</i></td>
+<td>No (variable)</td>
+<td><i>(language/system-dependent)</i></td>
+<td><i>(none)</i></td>
+<td>Forbidden</td>
+<td><i>(none)</i></td>
+</tr>
+<tr>
+<th>Modified Base64 for <a href="#Regular_expressions">Regular expressions</a> (non standard)</th>
+<td><code>!</code></td>
+<td><code>-</code></td>
+<td><i>(none)</i></td>
+<td>No (variable)</td>
+<td><i>(application-dependent)</i></td>
+<td><i>(none)</i></td>
+<td>Forbidden</td>
+<td><i>(none)</i></td>
+</tr>
+<tr>
+<th>Non-standard <a href="#URL_applications">URL</a>-safe Modification of Base64 used in <a href="/wiki/Freenet" title="Freenet">Freenet</a></th>
+<td><code>~</code></td>
+<td><code>-</code></td>
+<td><code>=</code></td>
+<td>No (variable)</td>
+<td><i>(application-dependent)</i></td>
+<td><i>(none)</i></td>
+<td>Forbidden</td>
+<td><i>(none)</i></td>
+</tr>
+</table>
+<h3><span class="mw-headline" id="Privacy-enhanced_mail">Privacy-enhanced mail</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Base64&amp;action=edit&amp;section=7" title="Edit section: Privacy-enhanced mail">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The first known standardized use of the encoding now called MIME Base64 was in the <a href="/wiki/Privacy-enhanced_Electronic_Mail" title="Privacy-enhanced Electronic Mail">Privacy-enhanced Electronic Mail</a> (PEM) protocol, proposed by <a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc989">RFC 989</a> in 1987. PEM defines a "printable encoding" scheme that uses Base64 encoding to transform an arbitrary sequence of <a href="/wiki/Octet_(computing)" title="Octet (computing)">octets</a> to a format that can be expressed in short lines of 6-bit characters, as required by transfer protocols such as <a href="/wiki/SMTP" class="mw-redirect" title="SMTP">SMTP</a>.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[6]</a></sup></p>
+<p>The current version of PEM (specified in <a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc1421">RFC 1421</a>) uses a 64-character alphabet consisting of upper- and lower-case <a href="/wiki/Roman_letters" class="mw-redirect" title="Roman letters">Roman letters</a> (<code>A</code>–<code>Z</code>, <code>a</code>–<code>z</code>), the numerals (<code>0</code>–<code>9</code>), and the "<code>+</code>" and "<code>/</code>" symbols. The "<code>=</code>" symbol is also used as a special suffix code.<sup id="cite_ref-rfc_1421_2-1" class="reference"><a href="#cite_note-rfc_1421-2">[2]</a></sup> The original specification, <a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc989">RFC 989</a>, additionally used the "<code>*</code>" symbol to delimit encoded but unencrypted data within the output stream.</p>
+<p>To convert data to PEM printable encoding, the first byte is placed in the <a href="/wiki/Most_significant_bit" title="Most significant bit">most significant</a> eight bits of a 24-bit <a href="/wiki/Data_buffer" title="Data buffer">buffer</a>, the next in the middle eight, and the third in the <a href="/wiki/Least_significant_bit" title="Least significant bit">least significant</a> eight bits. If there are fewer than three bytes left to encode (or in total), the remaining buffer bits will be zero. The buffer is then used, six bits at a time, most significant first, as indices into the string: "<code>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/</code>", and the indicated character is output.</p>
+<p>The process is repeated on the remaining data until fewer than four octets remain. If three octets remain, they are processed normally. If fewer than three octets (24 bits) are remaining to encode, the input data is right-padded with zero bits to form an integral multiple of six bits.</p>
+<p>After encoding the non-padded data, if two octets of the 24-bit buffer are padded-zeros, two "<code>=</code>" characters are appended to the output; if one octet of the 24-bit buffer is filled with padded-zeros, one "<code>=</code>" character is appended. This signals the decoder that the zero bits added due to padding should be excluded from the reconstructed data. This also guarantees that the encoded output length is a multiple of 4 bytes.</p>
+<p>PEM requires that all encoded lines consist of exactly 64 printable characters, with the exception of the last line, which may contain fewer printable characters. Lines are delimited by whitespace characters according to local (platform-specific) conventions.</p>
+<h3><span class="mw-headline" id="MIME">MIME</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Base64&amp;action=edit&amp;section=8" title="Edit section: MIME">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote">Main article: <a href="/wiki/MIME" title="MIME">MIME</a></div>
+<p>The <a href="/wiki/MIME" title="MIME">MIME</a> (Multipurpose Internet Mail Extensions) specification lists Base64 as one of two <a href="/wiki/Binary-to-text_encoding" title="Binary-to-text encoding">binary-to-text encoding</a> schemes (the other being <a href="/wiki/Quoted-printable" title="Quoted-printable">quoted-printable</a>).<sup id="cite_ref-rfc_2045_3-1" class="reference"><a href="#cite_note-rfc_2045-3">[3]</a></sup> MIME's Base64 encoding is based on that of the <a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc1421">RFC 1421</a> version of PEM: it uses the same 64-character alphabet and encoding mechanism as PEM, and uses the "<code>=</code>" symbol for output padding in the same way, as described at <a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc2045">RFC 2045</a>.</p>
+<p>MIME does not specify a fixed length for Base64-encoded lines, but it does specify a maximum line length of 76 characters. Additionally it specifies that any extra-alphabetic characters must be ignored by a compliant decoder, although most implementations use a CR/LF <a href="/wiki/Newline" title="Newline">newline</a> pair to delimit encoded lines.</p>
+<p>Thus, the actual length of MIME-compliant Base64-encoded binary data is usually about 137% of the original data length, though for very short messages the overhead can be much higher due to the overhead of the headers. Very roughly, the final size of Base64-encoded binary data is equal to 1.37 times the original data size + 814 bytes (for headers). The size of the decoded data can be approximated with this formula:</p>
+<pre>
+bytes = (string_length(encoded_string) - 814) / 1.37
+</pre>
+<h3><span class="mw-headline" id="UTF-7">UTF-7</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Base64&amp;action=edit&amp;section=9" title="Edit section: UTF-7">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote">Main article: <a href="/wiki/UTF-7" title="UTF-7">UTF-7</a></div>
+<p><a href="/wiki/UTF-7" title="UTF-7">UTF-7</a>, described first in <a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc1642">RFC 1642</a>, which was later superseded by <a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc2152">RFC 2152</a>, introduced a system called <i>modified Base64</i>. This data encoding scheme is used to encode <a href="/wiki/UTF-16" title="UTF-16">UTF-16</a> as <a href="/wiki/ASCII" title="ASCII">ASCII</a> characters for use in 7-bit transports such as <a href="/wiki/SMTP" class="mw-redirect" title="SMTP">SMTP</a>. It is a variant of the Base64 encoding used in MIME.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[7]</a></sup><sup id="cite_ref-8" class="reference"><a href="#cite_note-8">[8]</a></sup></p>
+<p>The "Modified Base64" alphabet consists of the MIME Base64 alphabet, but does not use the "<code>=</code>" padding character. UTF-7 is intended for use in mail headers (defined in <a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc2047">RFC 2047</a>), and the "<code>=</code>" character is reserved in that context as the escape character for "quoted-printable" encoding. Modified Base64 simply omits the padding and ends immediately after the last Base64 digit containing useful bits leaving up to three unused bits in the last Base64 digit.</p>
+<h3><span class="mw-headline" id="OpenPGP">OpenPGP</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Base64&amp;action=edit&amp;section=10" title="Edit section: OpenPGP">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote">Main article: <a href="/wiki/OpenPGP" class="mw-redirect" title="OpenPGP">OpenPGP</a></div>
+<p><a href="/wiki/OpenPGP" class="mw-redirect" title="OpenPGP">OpenPGP</a>, described in <a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc4880">RFC 4880</a>, describes <b>Radix-64</b> encoding, also known as "ASCII Armor". Radix-64 is identical to the "Base64" encoding described from MIME, with the addition of an optional 24-bit <a href="/wiki/Cyclic_redundancy_check" title="Cyclic redundancy check">CRC</a>. The <a href="/wiki/Checksum" title="Checksum">checksum</a> is calculated on the input data before encoding; the checksum is then encoded with the same Base64 algorithm and, using an additional "<code>=</code>" symbol as separator, appended to the encoded output data.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">[9]</a></sup></p>
+<h3><span class="mw-headline" id="RFC_3548"><a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc3548">RFC 3548</a></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Base64&amp;action=edit&amp;section=11" title="Edit section: RFC 3548">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc3548">RFC 3548</a>, entitled <i>The Base16, Base32, and Base64 Data Encodings</i>, is an informational (non-normative) memo that attempts to unify the <a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc1421">RFC 1421</a> and <a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc2045">RFC 2045</a> specifications of Base64 encodings, alternative-alphabet encodings, and the seldom-used Base32 and Base16 encodings.</p>
+<p>Unless implementations are written to a specification that refers to <a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc3548">RFC 3548</a> and specifically requires otherwise, <a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc3548">RFC 3548</a> forbids implementations from generating messages containing characters outside the encoding alphabet or without padding, and it also declares that decoder implementations must reject data that contain characters outside the encoding alphabet.<sup id="cite_ref-rfc_3548_4-1" class="reference"><a href="#cite_note-rfc_3548-4">[4]</a></sup></p>
+<h3><span class="mw-headline" id="RFC_4648"><a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc4648">RFC 4648</a></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Base64&amp;action=edit&amp;section=12" title="Edit section: RFC 4648">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>This RFC obsoletes <a class="external mw-magiclink-rfc" rel="nofollow" href="//tools.ietf.org/html/rfc3548">RFC 3548</a> and focuses on Base64/32/16:</p>
+<dl>
+<dd><i>This document describes the commonly used Base64, Base32, and Base16 encoding schemes. It also discusses the use of line-feeds in encoded data, use of padding in encoded data, use of non-alphabet characters in encoded data, use of different encoding alphabets, and canonical encodings.</i></dd>
+</dl>
+<h3><span class="mw-headline" id="Filenames">Filenames</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Base64&amp;action=edit&amp;section=13" title="Edit section: Filenames">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Another variant called <b>modified Base64 for filename</b> uses '<code>-</code>' instead of '<code>/</code>', because Unix and Windows filenames cannot contain '<code>/</code>'.</p>
+<p>It could be recommended to use the <i>modified Base64 for URL</i> instead, since then the filenames could be used in URLs also.</p>
+<h3><span class="mw-headline" id="URL_applications">URL applications</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Base64&amp;action=edit&amp;section=14" title="Edit section: URL applications">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Base64 encoding can be helpful when fairly lengthy identifying information is used in an HTTP environment. For example, a database persistence framework for <a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a> objects might use Base64 encoding to encode a relatively large unique id (generally 128-bit <a href="/wiki/UUID" class="mw-redirect" title="UUID">UUIDs</a>) into a string for use as an HTTP parameter in HTTP forms or HTTP GET <a href="/wiki/Uniform_Resource_Locator" title="Uniform Resource Locator">URLs</a>. Also, many applications need to encode binary data in a way that is convenient for inclusion in URLs, including in hidden web form fields, and Base64 is a convenient encoding to render them in a compact way.</p>
+<p>Using standard Base64 in <a href="/wiki/URL" class="mw-redirect" title="URL">URL</a> requires encoding of '<code>+</code>', '<code>/</code>' and '<code>=</code>' characters into special <a href="/wiki/Percent-encoding" title="Percent-encoding">percent-encoded</a> hexadecimal sequences ('<code>+</code>' becomes '<code>%2B</code>', '<code>/</code>' becomes '<code>%2F</code>' and '<code>=</code>' becomes '<code>%3D</code>'), which makes the string unnecessarily longer.</p>
+<p>For this reason, <b>modified Base64 for URL</b> variants exist, where the '<code>+</code>' and '<code>/</code>' characters of standard Base64 are respectively replaced by '<code>-</code>' and '<code>_</code>', so that using <a href="/wiki/Percent-encoding" title="Percent-encoding">URL encoders/decoders</a> is no longer necessary and have no impact on the length of the encoded value, leaving the same encoded form intact for use in relational databases, web forms, and object identifiers in general. Some variants allow or require omitting the padding '<code>=</code>' signs to avoid them being confused with field separators, or require that any such padding be percent-encoded. Some libraries will encode '<code>=</code>' to '<code>.</code>'.</p>
+<h3><span class="mw-headline" id="Program_identifiers">Program identifiers</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Base64&amp;action=edit&amp;section=15" title="Edit section: Program identifiers">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>There are other variants that use <code>_-</code> or <code>._</code> when the Base64 variant string must be used within valid identifiers for programs.</p>
+<h3><span class="mw-headline" id="XML">XML</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Base64&amp;action=edit&amp;section=16" title="Edit section: XML">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><a href="/wiki/XML" title="XML">XML</a> identifiers and name tokens are encoded using two variants:</p>
+<ul>
+<li><code>.-</code> for use in <a href="/wiki/XML" title="XML">XML</a> name tokens (<i>Nmtoken</i>), or even</li>
+<li><code>_:</code> for use in more restricted XML identifiers (<i>Name</i>).</li>
+</ul>
+<h3><span class="mw-headline" id="HTML">HTML</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Base64&amp;action=edit&amp;section=17" title="Edit section: HTML">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The <tt>atob()</tt> and <tt>btoa()</tt> JavaScript methods, defined in the HTML5 draft specification,<sup id="cite_ref-10" class="reference"><a href="#cite_note-10">[10]</a></sup> provide Base64 encoding and decoding functionality to web pages. The <tt>btoa()</tt> method outputs padding characters, but these are optional in the input of the <tt>atob()</tt> method.</p>
+<h3><span class="mw-headline" id="Other_applications">Other applications</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Base64&amp;action=edit&amp;section=18" title="Edit section: Other applications">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Base64 can be used in a variety of contexts:</p>
+<ul>
+<li>Base64 can be used to transmit and store text that might otherwise cause <a href="/wiki/Delimiter_collision" class="mw-redirect" title="Delimiter collision">delimiter collision</a></li>
+<li><a href="/wiki/Spam_(electronic)" class="mw-redirect" title="Spam (electronic)">Spammers</a> use Base64 to evade basic <a href="/wiki/Anti-spam_techniques_(e-mail)" class="mw-redirect" title="Anti-spam techniques (e-mail)">anti-spamming</a> tools, which often do not decode Base64 and therefore cannot detect keywords in encoded messages.</li>
+<li>Base64 is used to encode character strings in <a href="/wiki/LDIF" class="mw-redirect" title="LDIF">LDIF</a> files</li>
+<li>Base64 is often used to embed binary data in an <a href="/wiki/XML" title="XML">XML</a> file, using a syntax similar to <code>&lt;data encoding="base64"&gt;…&lt;/data&gt;</code> e.g. <a href="/wiki/Favicon" title="Favicon">favicons</a> in <a href="/wiki/Firefox" title="Firefox">Firefox</a>'s exported <tt>bookmarks.html</tt>.</li>
+<li>Base64 is used to encode binary files such as images within scripts, to avoid depending on external files.</li>
+<li>The <a href="/wiki/Data_URI_scheme" title="Data URI scheme">data URI scheme</a> can use Base64 to represent file contents. For instance, background images and fonts can be specified in a <a href="/wiki/Cascading_Style_Sheets" title="Cascading Style Sheets">CSS</a> stylesheet file as <code>data:</code> URIs, instead of being supplied in separate files.</li>
+<li>The FreeSWAN ipsec implementation precedes Base64 strings with <tt>0s</tt>, so they can be distinguished from text or hexadecimal strings.</li>
+<li>Although not part of the official specification for SVG, some viewers can interpret Base64 when used for embedded elements, such as images inside SVG.<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">[11]</a></sup></li>
+</ul>
+<h3><span class="mw-headline" id="Radix-64_applications_not_compatible_with_Base64">Radix-64 applications not compatible with Base64</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Base64&amp;action=edit&amp;section=19" title="Edit section: Radix-64 applications not compatible with Base64">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li>Unix stores password hashes computed with <a href="/wiki/Crypt_(C)" title="Crypt (C)">crypt</a> in the <a href="/wiki/Passwd#Password_file" title="Passwd"><tt>/etc/passwd</tt> file</a> using radix-64 encoding called <span id="B64">B64</span>. It uses a mostly-alphanumeric set of characters, but the non-alphanumeric characters are at the beginning. Its 64-character set is "<code>./0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz</code>". Padding is not used.</li>
+<li>The <a href="/wiki/GEDCOM" title="GEDCOM">GEDCOM</a> 5.5 standard for genealogical data interchange encodes multimedia files in its text-line hierarchical file format using radix-64. Its 64-character set is "<code>./0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz</code>".<sup id="cite_ref-12" class="reference"><a href="#cite_note-12">[12]</a></sup></li>
+<li><a href="/wiki/Uuencoding" title="Uuencoding">Uuencoding</a> uses ASCII 32 ("<code>&#160;</code>" (space)) through 95 ("<code>_</code>"), consecutively, making its 64-character set "<code>&#160;!"#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_</code>". Avoiding all lower-case letters was helpful because many older printers only printed uppercase. Using consecutive ASCII characters saved computing power because it was only necessary to add 32, not do a lookup. Its use of most punctuation characters and the space character limits its usefulness.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (April 2016)">citation needed</span></a></i>]</sup></li>
+<li><a href="/wiki/Xxencoding" title="Xxencoding">Xxencoding</a> uses a mostly-alphanumeric character set, but the non-alphanumeric characters are at the beginning. Its 64-character set is "<code>+-0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz</code>".</li>
+<li><a href="/wiki/BinHex" title="BinHex">BinHex</a>, which was used within the <a href="/wiki/Classic_Mac_OS" title="Classic Mac OS">classic Mac OS</a>, uses different set of 64 characters. It uses upper and lower case letters, digits, and punctuation characters, but does not use some visually confusable characters like '<code>7</code>', '<code>O</code>', '<code>g</code>' and '<code>o</code>'. Its 64-character set is "<code>!"#$%&amp;'()*+,-012345689@ABCDEFGHIJKLMNPQRSTUVXYZ[`abcdefhijklmpqr</code>".</li>
+<li>6PACK, used with some <a href="/wiki/Terminal_node_controller" title="Terminal node controller">terminal node controllers</a>, uses a different set of 64 characters.<sup id="cite_ref-13" class="reference"><a href="#cite_note-13">[13]</a></sup></li>
+<li>Base65, a variant of Base64, uses 0-9, A-Z, a-z, and ., -, and _ as additional characters.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (January 2016)">citation needed</span></a></i>]</sup></li>
+</ul>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Base64&amp;action=edit&amp;section=20" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/8BITMIME" class="mw-redirect" title="8BITMIME">8BITMIME</a></li>
+<li><a href="/wiki/Ascii85" title="Ascii85">Ascii85</a> (also called Base85)</li>
+<li><a href="/wiki/Base16" class="mw-redirect" title="Base16">Base16</a></li>
+<li><a href="/wiki/Base32" title="Base32">Base32</a></li>
+<li><a href="/wiki/Base36" title="Base36">Base36</a></li>
+<li><a href="/wiki/Base58" title="Base58">Base58</a></li>
+<li><a href="/wiki/Binary-to-text_encoding" title="Binary-to-text encoding">Binary-to-text encoding</a> for a comparison of various encoding algorithms</li>
+<li><a href="/wiki/Binary_number" title="Binary number">Binary number</a></li>
+<li><a href="/wiki/Uniform_Resource_Locator" title="Uniform Resource Locator">URL</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Base64&amp;action=edit&amp;section=21" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-count references-column-count-2" style="-moz-column-count: 2; -webkit-column-count: 2; column-count: 2; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-autogenerated2006-1"><span class="mw-cite-backlink">^ <a href="#cite_ref-autogenerated2006_1-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-autogenerated2006_1-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><span class="citation IETF_document"><a rel="nofollow" class="external text" href="https://tools.ietf.org/html/rfc4648"><i>The Base16,Base32,and Base64 Data Encodings</i></a>. <a href="/wiki/Internet_Engineering_Task_Force" title="Internet Engineering Task Force">IETF</a>. October 2006. RFC 4648<span class="printonly">. <a rel="nofollow" class="external free" href="https://tools.ietf.org/html/rfc4648">https://tools.ietf.org/html/rfc4648</a></span><span class="reference-accessdate">. Retrieved March 18, 2010</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Base16%2CBase32%2Cand+Base64+Data+Encodings&amp;rft.date=October+2006&amp;rft.pub=%5B%5BInternet+Engineering+Task+Force%7CIETF%5D%5D&amp;rft_id=https%3A%2F%2Ftools.ietf.org%2Fhtml%2Frfc4648&amp;rfr_id=info:sid/en.wikipedia.org:Base64"><span style="display: none;">&#160;</span></span></span></li>
+<li id="cite_note-rfc_1421-2"><span class="mw-cite-backlink">^ <a href="#cite_ref-rfc_1421_2-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-rfc_1421_2-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><span class="citation IETF_document"><a rel="nofollow" class="external text" href="https://tools.ietf.org/html/rfc1421"><i>Privacy Enhancement for InternetElectronic Mail: Part I: Message Encryption and Authentication Procedures</i></a>. <a href="/wiki/Internet_Engineering_Task_Force" title="Internet Engineering Task Force">IETF</a>. February 1993. RFC 1421<span class="printonly">. <a rel="nofollow" class="external free" href="https://tools.ietf.org/html/rfc1421">https://tools.ietf.org/html/rfc1421</a></span><span class="reference-accessdate">. Retrieved March 18, 2010</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Privacy+Enhancement+for+InternetElectronic+Mail%3A+Part+I%3A+Message+Encryption+and+Authentication+Procedures&amp;rft.date=February+1993&amp;rft.pub=%5B%5BInternet+Engineering+Task+Force%7CIETF%5D%5D&amp;rft_id=https%3A%2F%2Ftools.ietf.org%2Fhtml%2Frfc1421&amp;rfr_id=info:sid/en.wikipedia.org:Base64"><span style="display: none;">&#160;</span></span></span></li>
+<li id="cite_note-rfc_2045-3"><span class="mw-cite-backlink">^ <a href="#cite_ref-rfc_2045_3-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-rfc_2045_3-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><span class="citation IETF_document"><a rel="nofollow" class="external text" href="https://tools.ietf.org/html/rfc2045"><i>Multipurpose Internet Mail Extensions: (MIME) Part One: Format of Internet Message Bodies</i></a>. <a href="/wiki/Internet_Engineering_Task_Force" title="Internet Engineering Task Force">IETF</a>. November 1996. RFC 2045<span class="printonly">. <a rel="nofollow" class="external free" href="https://tools.ietf.org/html/rfc2045">https://tools.ietf.org/html/rfc2045</a></span><span class="reference-accessdate">. Retrieved March 18, 2010</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Multipurpose+Internet+Mail+Extensions%3A+%28MIME%29+Part+One%3A+Format+of+Internet+Message+Bodies&amp;rft.date=November+1996&amp;rft.pub=%5B%5BInternet+Engineering+Task+Force%7CIETF%5D%5D&amp;rft_id=https%3A%2F%2Ftools.ietf.org%2Fhtml%2Frfc2045&amp;rfr_id=info:sid/en.wikipedia.org:Base64"><span style="display: none;">&#160;</span></span></span></li>
+<li id="cite_note-rfc_3548-4"><span class="mw-cite-backlink">^ <a href="#cite_ref-rfc_3548_4-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-rfc_3548_4-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><span class="citation IETF_document"><a rel="nofollow" class="external text" href="https://tools.ietf.org/html/rfc3548"><i>The Base16, Base32, and Base64 Data Encodings</i></a>. <a href="/wiki/Internet_Engineering_Task_Force" title="Internet Engineering Task Force">IETF</a>. July 2003. RFC 3548<span class="printonly">. <a rel="nofollow" class="external free" href="https://tools.ietf.org/html/rfc3548">https://tools.ietf.org/html/rfc3548</a></span><span class="reference-accessdate">. Retrieved March 18, 2010</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Base16%2C+Base32%2C+and+Base64+Data+Encodings&amp;rft.date=July+2003&amp;rft.pub=%5B%5BInternet+Engineering+Task+Force%7CIETF%5D%5D&amp;rft_id=https%3A%2F%2Ftools.ietf.org%2Fhtml%2Frfc3548&amp;rfr_id=info:sid/en.wikipedia.org:Base64"><span style="display: none;">&#160;</span></span></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.yuiblog.com/blog/2010/07/06/in-the-yui-3-gallery-base64-and-y64-encoding/">"YUIBlog"</a>. YUIBlog<span class="reference-accessdate">. Retrieved <span class="nowrap">2012-06-21</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABase64&amp;rft.btitle=YUIBlog&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.yuiblog.com%2Fblog%2F2010%2F07%2F06%2Fin-the-yui-3-gallery-base64-and-y64-encoding%2F&amp;rft.pub=YUIBlog&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><span class="citation IETF_document"><a rel="nofollow" class="external text" href="https://tools.ietf.org/html/rfc989"><i>Privacy Enhancement for Internet Electronic Mail</i></a>. <a href="/wiki/Internet_Engineering_Task_Force" title="Internet Engineering Task Force">IETF</a>. February 1987. RFC 989<span class="printonly">. <a rel="nofollow" class="external free" href="https://tools.ietf.org/html/rfc989">https://tools.ietf.org/html/rfc989</a></span><span class="reference-accessdate">. Retrieved March 18, 2010</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Privacy+Enhancement+for+Internet+Electronic+Mail&amp;rft.date=February+1987&amp;rft.pub=%5B%5BInternet+Engineering+Task+Force%7CIETF%5D%5D&amp;rft_id=https%3A%2F%2Ftools.ietf.org%2Fhtml%2Frfc989&amp;rfr_id=info:sid/en.wikipedia.org:Base64"><span style="display: none;">&#160;</span></span></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><span class="citation IETF_document"><a rel="nofollow" class="external text" href="https://tools.ietf.org/html/rfc1642"><i>UTF-7 A Mail-Safe Transformation Format of Unicode</i></a>. <a href="/wiki/Internet_Engineering_Task_Force" title="Internet Engineering Task Force">IETF</a>. July 1994. RFC 1642<span class="printonly">. <a rel="nofollow" class="external free" href="https://tools.ietf.org/html/rfc1642">https://tools.ietf.org/html/rfc1642</a></span><span class="reference-accessdate">. Retrieved March 18, 2010</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=UTF-7+A+Mail-Safe+Transformation+Format+of+Unicode&amp;rft.date=July+1994&amp;rft.pub=%5B%5BInternet+Engineering+Task+Force%7CIETF%5D%5D&amp;rft_id=https%3A%2F%2Ftools.ietf.org%2Fhtml%2Frfc1642&amp;rfr_id=info:sid/en.wikipedia.org:Base64"><span style="display: none;">&#160;</span></span></span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><span class="citation IETF_document"><a rel="nofollow" class="external text" href="https://tools.ietf.org/html/rfc2152"><i>UTF-7 A Mail-Safe Transformation Format of Unicode</i></a>. <a href="/wiki/Internet_Engineering_Task_Force" title="Internet Engineering Task Force">IETF</a>. May 1997. RFC 2152<span class="printonly">. <a rel="nofollow" class="external free" href="https://tools.ietf.org/html/rfc2152">https://tools.ietf.org/html/rfc2152</a></span><span class="reference-accessdate">. Retrieved March 18, 2010</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=UTF-7+A+Mail-Safe+Transformation+Format+of+Unicode&amp;rft.date=May+1997&amp;rft.pub=%5B%5BInternet+Engineering+Task+Force%7CIETF%5D%5D&amp;rft_id=https%3A%2F%2Ftools.ietf.org%2Fhtml%2Frfc2152&amp;rfr_id=info:sid/en.wikipedia.org:Base64"><span style="display: none;">&#160;</span></span></span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><span class="citation IETF_document"><a rel="nofollow" class="external text" href="https://tools.ietf.org/html/rfc4880"><i>OpenPGP Message Format</i></a>. <a href="/wiki/Internet_Engineering_Task_Force" title="Internet Engineering Task Force">IETF</a>. November 2007. RFC 4880<span class="printonly">. <a rel="nofollow" class="external free" href="https://tools.ietf.org/html/rfc4880">https://tools.ietf.org/html/rfc4880</a></span><span class="reference-accessdate">. Retrieved March 18, 2010</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=OpenPGP+Message+Format&amp;rft.date=November+2007&amp;rft.pub=%5B%5BInternet+Engineering+Task+Force%7CIETF%5D%5D&amp;rft_id=https%3A%2F%2Ftools.ietf.org%2Fhtml%2Frfc4880&amp;rfr_id=info:sid/en.wikipedia.org:Base64"><span style="display: none;">&#160;</span></span></span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://w3c.github.io/html/webappapis.html#base64-utility-methods">"7.3. Base64 utility methods"</a>. <i>HTML 5.2 Editor's Draft</i>. <a href="/wiki/World_Wide_Web_Consortium" title="World Wide Web Consortium">World Wide Web Consortium</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2 January</span> 2017</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABase64&amp;rft.atitle=7.3.+Base64+utility+methods&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fw3c.github.io%2Fhtml%2Fwebappapis.html%23base64-utility-methods&amp;rft.jtitle=HTML+5.2+Editor%27s+Draft&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span> Introduced by <a rel="nofollow" class="external text" href="http://html5.org/tools/web-apps-tracker?from=5813&amp;to=5814">changeset 5814</a>, 2011-02-01.</span></li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://jsfiddle.net/MxHPq/">http://jsfiddle.net/MxHPq/</a></span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://homepages.rootsweb.ancestry.com/~pmcbride/gedcom/55gctoc.htm">"The GEDCOM Standard Release 5.5"</a>. Homepages.rootsweb.ancestry.com<span class="reference-accessdate">. Retrieved <span class="nowrap">2012-06-21</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABase64&amp;rft.btitle=The+GEDCOM+Standard+Release+5.5&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fhomepages.rootsweb.ancestry.com%2F~pmcbride%2Fgedcom%2F55gctoc.htm&amp;rft.pub=Homepages.rootsweb.ancestry.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://private.freepage.de/cgi-bin/feets/freepage_ext/41030x030A/rewrite/alexs/xfr/flexnet/6pack_en/6pack.htm">"6PACK a "real time" PC to TNC protocol"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2013-05-19</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABase64&amp;rft.btitle=6PACK+a+%22real+time%22+PC+to+TNC+protocol&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fprivate.freepage.de%2Fcgi-bin%2Ffeets%2Ffreepage_ext%2F41030x030A%2Frewrite%2Falexs%2Fxfr%2Fflexnet%2F6pack_en%2F6pack.htm&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Base64&amp;action=edit&amp;section=22" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="navigation" class="navbox" aria-labelledby="Data_exchange_formats" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Data_Exchange" title="Template:Data Exchange"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Data_Exchange" title="Template talk:Data Exchange"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Data_Exchange&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Data_exchange_formats" style="font-size:114%"><a href="/wiki/Data_exchange" title="Data exchange">Data exchange</a> formats</div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Human readable formats</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Atom_(standard)" title="Atom (standard)">Atom</a></li>
+<li><a href="/wiki/XML" title="XML">XML</a></li>
+<li><a href="/wiki/YAML" title="YAML">YAML</a></li>
+<li><a href="/wiki/JSON" title="JSON">JSON</a></li>
+<li><a href="/wiki/Resource_Description_Framework" title="Resource Description Framework">RDF</a></li>
+<li><a href="/wiki/Rebol" title="Rebol">Rebol</a></li>
+<li><a href="/wiki/RSS" title="RSS">RSS</a></li>
+<li><a href="/wiki/Web_Ontology_Language" title="Web Ontology Language">OWL</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Binary formats</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Action_Message_Format" title="Action Message Format">AMF</a></li>
+<li><a href="/wiki/Base32" title="Base32">Base32</a></li>
+<li><a href="/wiki/Base36" title="Base36">Base36</a></li>
+<li><a href="/wiki/Base58" title="Base58">Base58</a></li>
+<li><strong class="selflink">Base64</strong></li>
+<li><a href="/wiki/Ascii85" title="Ascii85">Ascii85</a></li>
+<li><a href="/wiki/MessagePack" title="MessagePack">MessagePack</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<table role="presentation" class="mbox-small plainlinks sistersitebox" style="border:1px solid #aaa;background-color:#f9f9f9">
+<tr>
+<td class="mbox-image"><a href="/wiki/File:Wikibooks-logo-en-noslogan.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/40px-Wikibooks-logo-en-noslogan.svg.png" width="40" height="40" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/60px-Wikibooks-logo-en-noslogan.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/80px-Wikibooks-logo-en-noslogan.svg.png 2x" data-file-width="400" data-file-height="400" /></a></td>
+<td class="mbox-text plainlist">The Wikibook <i><a href="https://en.wikibooks.org/wiki/Algorithm_implementation" class="extiw" title="wikibooks:Algorithm implementation">Algorithm implementation</a></i> has a page on the topic of: <i><b><a href="https://en.wikibooks.org/wiki/Algorithm_implementation/Miscellaneous/Base64" class="extiw" title="wikibooks:Algorithm implementation/Miscellaneous/Base64">Base64</a></b></i></td>
+</tr>
+</table>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1221
+Cached time: 20170112113329
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.232 seconds
+Real time usage: 0.307 seconds
+Preprocessor visited node count: 6510/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 54377/2097152 bytes
+Template argument size: 11817/2097152 bytes
+Highest expansion depth: 22/40
+Expensive parser function count: 4/500
+Lua time usage: 0.057/10.000 seconds
+Lua memory usage: 2.85 MB/50 MB
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  227.372      1 - -total
+ 53.33%  121.256      1 - Template:Reflist
+ 31.37%   71.337      8 - Template:Cite_IETF
+ 26.97%   61.314      8 - Template:Citation/core
+ 16.42%   37.337      1 - Template:Lead_too_short
+ 15.12%   34.367      4 - Template:Cite_web
+ 12.00%   27.278      2 - Template:Fix
+ 11.03%   25.072      1 - Template:Ambox
+  8.51%   19.342      1 - Template:Cn
+  6.84%   15.543      2 - Template:Delink
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:215241-0!*!0!!en!4!*!math=5 and timestamp 20170112113332 and revision id 759646518
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Base64&amp;oldid=759646518">https://en.wikipedia.org/w/index.php?title=Base64&amp;oldid=759646518</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Usenet" title="Category:Usenet">Usenet</a></li><li><a href="/wiki/Category:Email" title="Category:Email">Email</a></li><li><a href="/wiki/Category:Internet_Standards" title="Category:Internet Standards">Internet Standards</a></li><li><a href="/wiki/Category:Binary-to-text_encoding_formats" title="Category:Binary-to-text encoding formats">Binary-to-text encoding formats</a></li><li><a href="/wiki/Category:Data_serialization_formats" title="Category:Data serialization formats">Data serialization formats</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Wikipedia_introduction_cleanup_from_February_2013" title="Category:Wikipedia introduction cleanup from February 2013">Wikipedia introduction cleanup from February 2013</a></li><li><a href="/wiki/Category:All_pages_needing_cleanup" title="Category:All pages needing cleanup">All pages needing cleanup</a></li><li><a href="/wiki/Category:Articles_covered_by_WikiProject_Wikify_from_February_2013" title="Category:Articles covered by WikiProject Wikify from February 2013">Articles covered by WikiProject Wikify from February 2013</a></li><li><a href="/wiki/Category:All_articles_covered_by_WikiProject_Wikify" title="Category:All articles covered by WikiProject Wikify">All articles covered by WikiProject Wikify</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_April_2016" title="Category:Articles with unsourced statements from April 2016">Articles with unsourced statements from April 2016</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_January_2016" title="Category:Articles with unsourced statements from January 2016">Articles with unsourced statements from January 2016</a></li><li><a href="/wiki/Category:Pages_using_RFC_magic_links" title="Category:Pages using RFC magic links">Pages using RFC magic links</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Base64" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Base64" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Base64"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Base64"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Base64" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Base64&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Base64&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Base64" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Base64" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Base64&amp;oldid=759646518" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Base64&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q726780" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Base64&amp;id=759646518" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Base64">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Base64&amp;returnto=Base64&amp;oldid=759646518&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Base64&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ar"><a href="https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%A3%D8%B3%D8%A7%D8%B3_64" title="الأساس 64 – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target">العربية</a></li><li class="interlanguage-link interwiki-bn"><a href="https://bn.wikipedia.org/wiki/%E0%A6%AC%E0%A7%87%E0%A6%B8%E0%A7%AC%E0%A7%AA" title="বেস৬৪ – Bangla" lang="bn" hreflang="bn" class="interlanguage-link-target">বাংলা</a></li><li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/Base64" title="Base64 – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target">Català</a></li><li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/Base64" title="Base64 – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-da"><a href="https://da.wikipedia.org/wiki/Base64" title="Base64 – Danish" lang="da" hreflang="da" class="interlanguage-link-target">Dansk</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Base64" title="Base64 – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Base64" title="Base64 – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-eo"><a href="https://eo.wikipedia.org/wiki/64-uma_kodoprezento" title="64-uma kodoprezento – Esperanto" lang="eo" hreflang="eo" class="interlanguage-link-target">Esperanto</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D8%A8%DB%8C%D8%B3%DB%B6%DB%B4" title="بیس۶۴ – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Base64" title="Base64 – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/%EB%B2%A0%EC%9D%B4%EC%8A%A464" title="베이스64 – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Base64" title="Base64 – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-hu"><a href="https://hu.wikipedia.org/wiki/Base64" title="Base64 – Hungarian" lang="hu" hreflang="hu" class="interlanguage-link-target">Magyar</a></li><li class="interlanguage-link interwiki-ms"><a href="https://ms.wikipedia.org/wiki/Base64" title="Base64 – Malay" lang="ms" hreflang="ms" class="interlanguage-link-target">Bahasa Melayu</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/Base64" title="Base64 – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/Base64" title="Base64 – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/Base64" title="Base64 – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/Base64" title="Base64 – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/Base64" title="Base64 – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-sk"><a href="https://sk.wikipedia.org/wiki/Base64" title="Base64 – Slovak" lang="sk" hreflang="sk" class="interlanguage-link-target">Slovenčina</a></li><li class="interlanguage-link interwiki-sr"><a href="https://sr.wikipedia.org/wiki/Base64" title="Base64 – Serbian" lang="sr" hreflang="sr" class="interlanguage-link-target">Српски / srpski</a></li><li class="interlanguage-link interwiki-sh"><a href="https://sh.wikipedia.org/wiki/Base64" title="Base64 – Serbo-Croatian" lang="sh" hreflang="sh" class="interlanguage-link-target">Srpskohrvatski / српскохрватски</a></li><li class="interlanguage-link interwiki-sv"><a href="https://sv.wikipedia.org/wiki/Base64" title="Base64 – Swedish" lang="sv" hreflang="sv" class="interlanguage-link-target">Svenska</a></li><li class="interlanguage-link interwiki-tr"><a href="https://tr.wikipedia.org/wiki/Base64" title="Base64 – Turkish" lang="tr" hreflang="tr" class="interlanguage-link-target">Türkçe</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/Base64" title="Base64 – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li><li class="interlanguage-link interwiki-yi"><a href="https://yi.wikipedia.org/wiki/64_%D7%91%D7%90%D7%96%D7%A2" title="64 באזע – Yiddish" lang="yi" hreflang="yi" class="interlanguage-link-target">ייִדיש</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/Base64" title="Base64 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li><li class="uls-p-lang-dummy"><a href="#"></a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q726780#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 12 January 2017, at 11:33.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Base64&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":69,"wgHostname":"mw1178"});});</script>
+	</body></html>
